@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LaunchView" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BXX-de-ZLg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-Dx-mwb">
+                    <rect key="frame" x="119" y="279" width="137" height="45"/>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-wY-K7P">
+                    <rect key="frame" x="75" y="342.5" width="225" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BK0-Dx-mwb" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-42" id="1H9-78-U1S"/>
+                <constraint firstItem="B3E-wY-K7P" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="8Wd-FX-Qda"/>
+                <constraint firstItem="BXX-de-ZLg" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="D1v-bu-Zkj"/>
+                <constraint firstItem="B3E-wY-K7P" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QE4-oP-P7V"/>
+                <constraint firstItem="BK0-Dx-mwb" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Qjp-ro-3Ih"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BXX-de-ZLg" secondAttribute="bottom" id="Rj8-do-NFz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BXX-de-ZLg" secondAttribute="trailing" id="S1i-ec-bES"/>
+                <constraint firstItem="B3E-wY-K7P" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="VEP-oC-4dF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="BXX-de-ZLg" secondAttribute="top" constant="20" id="VLr-Wi-fEj"/>
+                <constraint firstItem="BXX-de-ZLg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="e6w-GP-Adp"/>
+                <constraint firstItem="BXX-de-ZLg" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="o2H-W1-XNW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="progressBar" destination="B3E-wY-K7P" id="1YH-co-Iz2"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="logo" width="137" height="45"/>
+    </resources>
+</document>
