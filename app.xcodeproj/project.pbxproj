@@ -16,6 +16,20 @@
 		9F1D79DF214A597C009223E6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79DE214A597C009223E6 /* BaseViewController.swift */; };
 		9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */; };
 		9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */; };
+		9F1D79E6214A7266009223E6 /* RecentShipmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79E4214A7266009223E6 /* RecentShipmentTableViewCell.swift */; };
+		9F1D79E7214A7266009223E6 /* RecentShipmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79E5214A7266009223E6 /* RecentShipmentTableViewCell.xib */; };
+		9F1D79EA214A77BB009223E6 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79E8214A77BB009223E6 /* PaymentsTableViewCell.swift */; };
+		9F1D79EB214A77BB009223E6 /* PaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79E9214A77BB009223E6 /* PaymentsTableViewCell.xib */; };
+		9F1D79F2214A8037009223E6 /* AllShipmentAndPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79F0214A8037009223E6 /* AllShipmentAndPaymentViewController.swift */; };
+		9F1D79F3214A8037009223E6 /* AllShipmentAndPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79F1214A8037009223E6 /* AllShipmentAndPaymentViewController.xib */; };
+		9F1D79F6214A864C009223E6 /* ShipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79F4214A864C009223E6 /* ShipmentDetailViewController.swift */; };
+		9F1D79F7214A864C009223E6 /* ShipmentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79F5214A864C009223E6 /* ShipmentDetailViewController.xib */; };
+		9F1D79FA214AA57D009223E6 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79F8214AA57D009223E6 /* DocumentsViewController.swift */; };
+		9F1D79FB214AA57D009223E6 /* DocumentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79F9214AA57D009223E6 /* DocumentsViewController.xib */; };
+		9F1D79FE214AA97F009223E6 /* DocumentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79FC214AA97F009223E6 /* DocumentsTableViewCell.swift */; };
+		9F1D79FF214AA97F009223E6 /* DocumentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79FD214AA97F009223E6 /* DocumentsTableViewCell.xib */; };
+		9F1D7A02214AAF55009223E6 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D7A00214AAF55009223E6 /* SupportViewController.swift */; };
+		9F1D7A03214AAF55009223E6 /* SupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D7A01214AAF55009223E6 /* SupportViewController.xib */; };
 		9F26A699213BB0E900AD1AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26A698213BB0E900AD1AD9 /* AppDelegate.swift */; };
 		9F26A6A0213BB0E900AD1AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F26A69F213BB0E900AD1AD9 /* Assets.xcassets */; };
 		9F26A6A3213BB0E900AD1AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F26A6A1213BB0E900AD1AD9 /* LaunchScreen.storyboard */; };
@@ -67,6 +81,20 @@
 		9F1D79DE214A597C009223E6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		9F1D79E4214A7266009223E6 /* RecentShipmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentShipmentTableViewCell.swift; sourceTree = "<group>"; };
+		9F1D79E5214A7266009223E6 /* RecentShipmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentShipmentTableViewCell.xib; sourceTree = "<group>"; };
+		9F1D79E8214A77BB009223E6 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
+		9F1D79E9214A77BB009223E6 /* PaymentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTableViewCell.xib; sourceTree = "<group>"; };
+		9F1D79F0214A8037009223E6 /* AllShipmentAndPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllShipmentAndPaymentViewController.swift; sourceTree = "<group>"; };
+		9F1D79F1214A8037009223E6 /* AllShipmentAndPaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllShipmentAndPaymentViewController.xib; sourceTree = "<group>"; };
+		9F1D79F4214A864C009223E6 /* ShipmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentDetailViewController.swift; sourceTree = "<group>"; };
+		9F1D79F5214A864C009223E6 /* ShipmentDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipmentDetailViewController.xib; sourceTree = "<group>"; };
+		9F1D79F8214AA57D009223E6 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		9F1D79F9214AA57D009223E6 /* DocumentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentsViewController.xib; sourceTree = "<group>"; };
+		9F1D79FC214AA97F009223E6 /* DocumentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsTableViewCell.swift; sourceTree = "<group>"; };
+		9F1D79FD214AA97F009223E6 /* DocumentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentsTableViewCell.xib; sourceTree = "<group>"; };
+		9F1D7A00214AAF55009223E6 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		9F1D7A01214AAF55009223E6 /* SupportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportViewController.xib; sourceTree = "<group>"; };
 		9F26A695213BB0E900AD1AD9 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F26A698213BB0E900AD1AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F26A69F213BB0E900AD1AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +246,14 @@
 				9F7C4091214A4A640085D20A /* NotificationViewController.xib */,
 				9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */,
 				9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */,
+				9F1D79F0214A8037009223E6 /* AllShipmentAndPaymentViewController.swift */,
+				9F1D79F1214A8037009223E6 /* AllShipmentAndPaymentViewController.xib */,
+				9F1D79F4214A864C009223E6 /* ShipmentDetailViewController.swift */,
+				9F1D79F5214A864C009223E6 /* ShipmentDetailViewController.xib */,
+				9F1D79F8214AA57D009223E6 /* DocumentsViewController.swift */,
+				9F1D79F9214AA57D009223E6 /* DocumentsViewController.xib */,
+				9F1D7A00214AAF55009223E6 /* SupportViewController.swift */,
+				9F1D7A01214AAF55009223E6 /* SupportViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +273,12 @@
 			children = (
 				9F7C4095214A4BFF0085D20A /* NotificationTableViewCell.swift */,
 				9F7C4096214A4BFF0085D20A /* NotificationTableViewCell.xib */,
+				9F1D79E4214A7266009223E6 /* RecentShipmentTableViewCell.swift */,
+				9F1D79E5214A7266009223E6 /* RecentShipmentTableViewCell.xib */,
+				9F1D79E8214A77BB009223E6 /* PaymentsTableViewCell.swift */,
+				9F1D79E9214A77BB009223E6 /* PaymentsTableViewCell.xib */,
+				9F1D79FC214AA97F009223E6 /* DocumentsTableViewCell.swift */,
+				9F1D79FD214AA97F009223E6 /* DocumentsTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -370,15 +412,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1D7A03214AAF55009223E6 /* SupportViewController.xib in Resources */,
+				9F1D79E7214A7266009223E6 /* RecentShipmentTableViewCell.xib in Resources */,
+				9F1D79F3214A8037009223E6 /* AllShipmentAndPaymentViewController.xib in Resources */,
 				9F7C4098214A4BFF0085D20A /* NotificationTableViewCell.xib in Resources */,
 				9F26A6E2213BCB6800AD1AD9 /* ProfileViewController.xib in Resources */,
 				9F7C408E214A49580085D20A /* Images.xcassets in Resources */,
 				9F26A6C9213BB1C900AD1AD9 /* BaseAPI in Resources */,
 				9F26A6A3213BB0E900AD1AD9 /* LaunchScreen.storyboard in Resources */,
 				9F26A6A0213BB0E900AD1AD9 /* Assets.xcassets in Resources */,
+				9F1D79EB214A77BB009223E6 /* PaymentsTableViewCell.xib in Resources */,
+				9F1D79F7214A864C009223E6 /* ShipmentDetailViewController.xib in Resources */,
 				9F1686CA2142CE0A0023AF2C /* LaunchView.xib in Resources */,
 				9F7C4093214A4A640085D20A /* NotificationViewController.xib in Resources */,
+				9F1D79FF214AA97F009223E6 /* DocumentsTableViewCell.xib in Resources */,
 				9F26A6DE213BBE2D00AD1AD9 /* SlideMenuViewController.xib in Resources */,
+				9F1D79FB214AA57D009223E6 /* DocumentsViewController.xib in Resources */,
 				9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */,
 				9F26A6D0213BB4F600AD1AD9 /* HomeViewController.xib in Resources */,
 			);
@@ -555,14 +604,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1D79FA214AA57D009223E6 /* DocumentsViewController.swift in Sources */,
+				9F1D79E6214A7266009223E6 /* RecentShipmentTableViewCell.swift in Sources */,
+				9F1D7A02214AAF55009223E6 /* SupportViewController.swift in Sources */,
 				9F26A699213BB0E900AD1AD9 /* AppDelegate.swift in Sources */,
 				9F1686C82142CDF90023AF2C /* LaunchView.swift in Sources */,
 				9F26A6DD213BBE2D00AD1AD9 /* SlideMenuViewController.swift in Sources */,
 				9F7C4092214A4A640085D20A /* NotificationViewController.swift in Sources */,
 				9F7C4097214A4BFF0085D20A /* NotificationTableViewCell.swift in Sources */,
+				9F1D79F2214A8037009223E6 /* AllShipmentAndPaymentViewController.swift in Sources */,
+				9F1D79EA214A77BB009223E6 /* PaymentsTableViewCell.swift in Sources */,
 				9F1D79DF214A597C009223E6 /* BaseViewController.swift in Sources */,
 				9F26A6E1213BCB6800AD1AD9 /* ProfileViewController.swift in Sources */,
 				9F1686CD2142D1710023AF2C /* BaseView.swift in Sources */,
+				9F1D79FE214AA97F009223E6 /* DocumentsTableViewCell.swift in Sources */,
+				9F1D79F6214A864C009223E6 /* ShipmentDetailViewController.swift in Sources */,
 				9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */,
 				9F26A6CF213BB4F600AD1AD9 /* HomeViewController.swift in Sources */,
 			);

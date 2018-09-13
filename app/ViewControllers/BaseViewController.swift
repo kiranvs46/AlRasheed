@@ -9,6 +9,11 @@
 import UIKit
 import KYDrawerController
 
+enum TableType {
+    case shipments
+    case payments
+}
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -25,6 +30,10 @@ class BaseViewController: UIViewController {
         
         let imgView = UIImageView.init(image: UIImage.init(named: "logo"))
         self.navigationItem.titleView = imgView
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = UIColor.init(red: 2/255, green: 24/255, blue: 85/255, alpha: 1)
+        
         setBarButtons()
     }
     
@@ -34,7 +43,7 @@ class BaseViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "bell"), style: .plain, target: self, action: #selector(showNotificationView))
     }
 
-    @objc private func showSlideMenu() {
+    @objc func showSlideMenu() {
         
         let slideMenu = self.navigationController?.parent as! KYDrawerController
         slideMenu.setDrawerState(.opened, animated: true)

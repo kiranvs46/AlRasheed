@@ -55,6 +55,9 @@ class SlideMenuViewController: UIViewController {
     
     @IBAction func searchShipmentAction() {
         
+        if let delegate = slideMenuDelegate {
+            delegate.didTapSearchShipment()
+        }
     }
     
     @IBAction func shipInfoAction() {
@@ -63,10 +66,16 @@ class SlideMenuViewController: UIViewController {
     
     @IBAction func documentsAction() {
         
+        if let delegate = slideMenuDelegate {
+            delegate.didTapDocuments()
+        }
     }
     
     @IBAction func supportAction() {
         
+        if let delegate = slideMenuDelegate {
+            delegate.didTapSupport()
+        }
     }
     
     @IBAction func aboutAction() {
