@@ -19,7 +19,6 @@ class HomeViewController: BaseViewController {
 
         showLaunchScreen()
         setUpNavigationBar()
-        setBarButtons()
         setSlideMenuDelegate()
         // Do any additional setup after loading the view.
     }
@@ -42,22 +41,10 @@ class HomeViewController: BaseViewController {
         //animateProgressView()
     }
     
-    
-    private func setBarButtons() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "bell"), style: .plain, target: self, action: #selector(showNotificationView))
-    }
-    
     private func setSlideMenuDelegate() {
         
         let slideMenu = (self.navigationController?.parent as! KYDrawerController).drawerViewController as! SlideMenuViewController
         slideMenu.slideMenuDelegate = self
-    }
-    
-    
-    @objc private func showNotificationView() {
-        
-        let notificationVC = NotificationViewController.init(nibName:"NotificationViewController", bundle: nil)
-        self.navigationController?.pushViewController(notificationVC, animated: true)
     }
     
     private func hideSlideMenu() {
@@ -91,30 +78,39 @@ class HomeViewController: BaseViewController {
 
 
 extension HomeViewController:SlideMenuDelegate {
+    
     func didTapVisitProfile() {
         
+        hideSlideMenu()
         let profileVC = ProfileViewController.init(nibName: "ProfileViewController", bundle: nil)
         setViewControllerAsMain(vc: profileVC)
     }
     
     func didTapSearchShipment() {
         
+        hideSlideMenu()
     }
     
     func didTapShipInfo() {
         
+        hideSlideMenu()
     }
     
     func didTapDocuments() {
         
+        hideSlideMenu()
     }
     
     func didTapSupport() {
         
+        hideSlideMenu()
     }
     
     func didTapAbout() {
         
+        hideSlideMenu()
+        let aboutVC = AboutViewController.init(nibName: "AboutViewController", bundle: nil)
+        self.navigationController?.pushViewController(aboutVC, animated: true)
     }
     
     func didTapLogOut() {

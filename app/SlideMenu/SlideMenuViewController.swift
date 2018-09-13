@@ -71,6 +71,9 @@ class SlideMenuViewController: UIViewController {
     
     @IBAction func aboutAction() {
         
+        if let delegate = slideMenuDelegate {
+            delegate.didTapAbout()
+        }
     }
     
     @IBAction func logout() {

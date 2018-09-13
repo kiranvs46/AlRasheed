@@ -31,11 +31,18 @@ class BaseViewController: UIViewController {
     private func setBarButtons() {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "menu"), style: .plain, target: self, action: #selector(showSlideMenu))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "bell"), style: .plain, target: self, action: #selector(showNotificationView))
     }
 
     @objc private func showSlideMenu() {
         
         let slideMenu = self.navigationController?.parent as! KYDrawerController
         slideMenu.setDrawerState(.opened, animated: true)
+    }
+    
+    @objc private func showNotificationView() {
+        
+        let notificationVC = NotificationViewController.init(nibName:"NotificationViewController", bundle: nil)
+        self.navigationController?.pushViewController(notificationVC, animated: true)
     }
 }

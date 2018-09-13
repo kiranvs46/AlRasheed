@@ -14,6 +14,8 @@
 		9F1686CA2142CE0A0023AF2C /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1686C92142CE0A0023AF2C /* LaunchView.xib */; };
 		9F1686CD2142D1710023AF2C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1686CC2142D1710023AF2C /* BaseView.swift */; };
 		9F1D79DF214A597C009223E6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79DE214A597C009223E6 /* BaseViewController.swift */; };
+		9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */; };
+		9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */; };
 		9F26A699213BB0E900AD1AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26A698213BB0E900AD1AD9 /* AppDelegate.swift */; };
 		9F26A6A0213BB0E900AD1AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F26A69F213BB0E900AD1AD9 /* Assets.xcassets */; };
 		9F26A6A3213BB0E900AD1AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F26A6A1213BB0E900AD1AD9 /* LaunchScreen.storyboard */; };
@@ -63,6 +65,8 @@
 		9F1686C92142CE0A0023AF2C /* LaunchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 		9F1686CC2142D1710023AF2C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		9F1D79DE214A597C009223E6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		9F26A695213BB0E900AD1AD9 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F26A698213BB0E900AD1AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F26A69F213BB0E900AD1AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,13 +209,15 @@
 		9F26A6CA213BB49300AD1AD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F1D79DE214A597C009223E6 /* BaseViewController.swift */,
 				9F26A6CD213BB4F600AD1AD9 /* HomeViewController.swift */,
 				9F26A6CE213BB4F600AD1AD9 /* HomeViewController.xib */,
 				9F26A6DF213BCB6800AD1AD9 /* ProfileViewController.swift */,
 				9F26A6E0213BCB6800AD1AD9 /* ProfileViewController.xib */,
 				9F7C4090214A4A640085D20A /* NotificationViewController.swift */,
 				9F7C4091214A4A640085D20A /* NotificationViewController.xib */,
-				9F1D79DE214A597C009223E6 /* BaseViewController.swift */,
+				9F1D79E0214A5BBA009223E6 /* AboutViewController.swift */,
+				9F1D79E1214A5BBA009223E6 /* AboutViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				9F1686CA2142CE0A0023AF2C /* LaunchView.xib in Resources */,
 				9F7C4093214A4A640085D20A /* NotificationViewController.xib in Resources */,
 				9F26A6DE213BBE2D00AD1AD9 /* SlideMenuViewController.xib in Resources */,
+				9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */,
 				9F26A6D0213BB4F600AD1AD9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +563,7 @@
 				9F1D79DF214A597C009223E6 /* BaseViewController.swift in Sources */,
 				9F26A6E1213BCB6800AD1AD9 /* ProfileViewController.swift in Sources */,
 				9F1686CD2142D1710023AF2C /* BaseView.swift in Sources */,
+				9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */,
 				9F26A6CF213BB4F600AD1AD9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
