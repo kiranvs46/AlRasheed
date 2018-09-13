@@ -23,6 +23,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView:UITableView!
     @IBOutlet weak var viewAllShipmentButton:UIButton!
     @IBOutlet weak var pickerView:UIPickerView!
+    @IBOutlet weak var pickerBgView:UIView!
     
     var currentTableType:TableType?
     
@@ -89,10 +90,18 @@ class HomeViewController: BaseViewController {
         
         if self.pickerView.isHidden {
             self.pickerView.isHidden = false
+            self.pickerBgView.isHidden = false
         }
         else {
             self.pickerView.isHidden = true
+            self.pickerBgView.isHidden = true
         }
+    }
+    
+    @IBAction func pickerDoneAction() {
+        
+        self.pickerView.isHidden = true
+        self.pickerBgView.isHidden = true
     }
     
     @IBAction func viewAllShipmentsAction() {
