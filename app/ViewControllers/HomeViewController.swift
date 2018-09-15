@@ -30,7 +30,6 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        showLaunchScreen()
         setUpNavigationBar()
         setSlideMenuDelegate()
         
@@ -49,17 +48,12 @@ class HomeViewController: BaseViewController {
     }
     
     //MARK -
-    
-    private func showLaunchScreen() {
-        
-        
-        //animateProgressView()
-    }
+
     
     private func setSlideMenuDelegate() {
         
-        let slideMenu = (self.navigationController?.parent as! KYDrawerController).drawerViewController as! SlideMenuViewController
-        slideMenu.slideMenuDelegate = self
+        //let slideMenu = (self.navigationController?.parent as! KYDrawerController).drawerViewController as! SlideMenuViewController
+        //slideMenu.slideMenuDelegate = self
     }
     
     private func hideSlideMenu() {

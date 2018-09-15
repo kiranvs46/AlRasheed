@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="progressBar" destination="syA-rt-T3e" id="QVE-Vn-Zsb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3pj-Tm-9R0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="V9B-vn-TsM">
+                    <rect key="frame" x="119" y="209" width="137" height="45"/>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="syA-rt-T3e">
+                    <rect key="frame" x="119" y="284" width="137" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="3pj-Tm-9R0" secondAttribute="top" constant="20" id="0Yi-w2-BO5"/>
+                <constraint firstItem="V9B-vn-TsM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="189" id="8rp-g2-4gu"/>
+                <constraint firstItem="syA-rt-T3e" firstAttribute="trailing" secondItem="V9B-vn-TsM" secondAttribute="trailing" id="TtV-wl-gRZ"/>
+                <constraint firstItem="syA-rt-T3e" firstAttribute="leading" secondItem="V9B-vn-TsM" secondAttribute="leading" id="bno-Ha-TaP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3pj-Tm-9R0" secondAttribute="bottom" id="dbq-GC-6G1"/>
+                <constraint firstItem="3pj-Tm-9R0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dzR-he-qtz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3pj-Tm-9R0" secondAttribute="trailing" id="iEa-HT-uxE"/>
+                <constraint firstItem="syA-rt-T3e" firstAttribute="top" secondItem="V9B-vn-TsM" secondAttribute="bottom" constant="30" id="iYG-0B-mLt"/>
+                <constraint firstItem="V9B-vn-TsM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xLc-TC-ifH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="logo" width="137" height="45"/>
+    </resources>
+</document>
