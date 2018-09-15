@@ -148,6 +148,8 @@ extension HomeViewController:SlideMenuDelegate {
     func didTapShipInfo() {
         
         hideSlideMenu()
+        let shipInfoVC = ShipInfoViewController.init(nibName: "ShipInfoViewController", bundle: nil)
+        self.navigationController?.pushViewController(shipInfoVC, animated: true)
     }
     
     func didTapDocuments() {

@@ -59,6 +59,10 @@
 		9F8AAF7D214CE45700E2D9D6 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7B214CE45700E2D9D6 /* LaunchViewController.xib */; };
 		9F8AAF80214CF49000E2D9D6 /* PINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7E214CF49000E2D9D6 /* PINViewController.swift */; };
 		9F8AAF81214CF49000E2D9D6 /* PINViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7F214CF49000E2D9D6 /* PINViewController.xib */; };
+		9F8AAF84214CFCD300E2D9D6 /* ShipInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF82214CFCD300E2D9D6 /* ShipInfoViewController.swift */; };
+		9F8AAF85214CFCD300E2D9D6 /* ShipInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF83214CFCD300E2D9D6 /* ShipInfoViewController.xib */; };
+		9F8AAF88214D045900E2D9D6 /* ShipInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF86214D045900E2D9D6 /* ShipInfoTableViewCell.swift */; };
+		9F8AAF89214D045900E2D9D6 /* ShipInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF87214D045900E2D9D6 /* ShipInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,10 @@
 		9F8AAF7B214CE45700E2D9D6 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		9F8AAF7E214CF49000E2D9D6 /* PINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINViewController.swift; sourceTree = "<group>"; };
 		9F8AAF7F214CF49000E2D9D6 /* PINViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINViewController.xib; sourceTree = "<group>"; };
+		9F8AAF82214CFCD300E2D9D6 /* ShipInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipInfoViewController.swift; sourceTree = "<group>"; };
+		9F8AAF83214CFCD300E2D9D6 /* ShipInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipInfoViewController.xib; sourceTree = "<group>"; };
+		9F8AAF86214D045900E2D9D6 /* ShipInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipInfoTableViewCell.swift; sourceTree = "<group>"; };
+		9F8AAF87214D045900E2D9D6 /* ShipInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipInfoTableViewCell.xib; sourceTree = "<group>"; };
 		BA240348381C62DF750A839A /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -275,6 +283,8 @@
 				9F1D79F1214A8037009223E6 /* AllShipmentAndPaymentViewController.xib */,
 				9F1D79F4214A864C009223E6 /* ShipmentDetailViewController.swift */,
 				9F1D79F5214A864C009223E6 /* ShipmentDetailViewController.xib */,
+				9F8AAF82214CFCD300E2D9D6 /* ShipInfoViewController.swift */,
+				9F8AAF83214CFCD300E2D9D6 /* ShipInfoViewController.xib */,
 				9F1D79F8214AA57D009223E6 /* DocumentsViewController.swift */,
 				9F1D79F9214AA57D009223E6 /* DocumentsViewController.xib */,
 				9F1D7A00214AAF55009223E6 /* SupportViewController.swift */,
@@ -306,6 +316,8 @@
 				9F1D79E9214A77BB009223E6 /* PaymentsTableViewCell.xib */,
 				9F1D79FC214AA97F009223E6 /* DocumentsTableViewCell.swift */,
 				9F1D79FD214AA97F009223E6 /* DocumentsTableViewCell.xib */,
+				9F8AAF86214D045900E2D9D6 /* ShipInfoTableViewCell.swift */,
+				9F8AAF87214D045900E2D9D6 /* ShipInfoTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -467,6 +479,7 @@
 				9F8AAF71214CD72500E2D9D6 /* SIgnUpViewController.xib in Resources */,
 				9F7C408E214A49580085D20A /* Images.xcassets in Resources */,
 				9F8AAF79214CE0C200E2D9D6 /* ForgotPasswordViewController.xib in Resources */,
+				9F8AAF89214D045900E2D9D6 /* ShipInfoTableViewCell.xib in Resources */,
 				9F26A6C9213BB1C900AD1AD9 /* BaseAPI in Resources */,
 				9F26A6A3213BB0E900AD1AD9 /* LaunchScreen.storyboard in Resources */,
 				9F26A6A0213BB0E900AD1AD9 /* Assets.xcassets in Resources */,
@@ -476,6 +489,7 @@
 				9F7C4093214A4A640085D20A /* NotificationViewController.xib in Resources */,
 				9F1D79FF214AA97F009223E6 /* DocumentsTableViewCell.xib in Resources */,
 				9F26A6DE213BBE2D00AD1AD9 /* SlideMenuViewController.xib in Resources */,
+				9F8AAF85214CFCD300E2D9D6 /* ShipInfoViewController.xib in Resources */,
 				9F1D79FB214AA57D009223E6 /* DocumentsViewController.xib in Resources */,
 				9F8AAF75214CDFA100E2D9D6 /* OTPViewController.xib in Resources */,
 				9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */,
@@ -668,6 +682,7 @@
 				9F1686C82142CDF90023AF2C /* LaunchView.swift in Sources */,
 				9F8AAF78214CE0C200E2D9D6 /* ForgotPasswordViewController.swift in Sources */,
 				9F26A6DD213BBE2D00AD1AD9 /* SlideMenuViewController.swift in Sources */,
+				9F8AAF88214D045900E2D9D6 /* ShipInfoTableViewCell.swift in Sources */,
 				9F7C4092214A4A640085D20A /* NotificationViewController.swift in Sources */,
 				9F7C4097214A4BFF0085D20A /* NotificationTableViewCell.swift in Sources */,
 				9F1D79F2214A8037009223E6 /* AllShipmentAndPaymentViewController.swift in Sources */,
@@ -680,6 +695,7 @@
 				9F8AAF7C214CE45700E2D9D6 /* LaunchViewController.swift in Sources */,
 				9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */,
 				9F26A6CF213BB4F600AD1AD9 /* HomeViewController.swift in Sources */,
+				9F8AAF84214CFCD300E2D9D6 /* ShipInfoViewController.swift in Sources */,
 				9F8AAF80214CF49000E2D9D6 /* PINViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

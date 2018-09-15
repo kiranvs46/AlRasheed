@@ -18,7 +18,9 @@ class PINViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addBackButton() 
         pinField.textField.delegate = self
+        pinField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +42,18 @@ class PINViewController: UIViewController {
         
         let window = UIApplication.shared.windows[0]
         window.rootViewController = drawerController
+    }
+    
+    //MARK -
+    
+    private func addBackButton() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back_arrow"), style: .plain, target: self, action: #selector(backAction))
+        //self.navigationItem.rightBarButtonItem = nil
+    }
+    
+    @objc func backAction() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

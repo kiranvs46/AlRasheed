@@ -62,6 +62,9 @@ class SlideMenuViewController: UIViewController {
     
     @IBAction func shipInfoAction() {
         
+        if let delegate = slideMenuDelegate {
+            delegate.didTapShipInfo()
+        }
     }
     
     @IBAction func documentsAction() {

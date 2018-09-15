@@ -14,6 +14,9 @@ class DocumentsViewController: BaseViewController {
     @IBOutlet weak var tableView:UITableView!
     @IBOutlet weak var requestContainerView:UIView!
     @IBOutlet weak var segmentedControl:UISegmentedControl!
+    @IBOutlet weak var pickerView:UIPickerView!
+    @IBOutlet weak var pickerBgView:UIView!
+    @IBOutlet weak var shipmentSelectionButton:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +55,24 @@ class DocumentsViewController: BaseViewController {
         }
     }
     
+    @IBAction func searchDropDownAction() {
+        
+        if self.pickerView.isHidden {
+            self.pickerView.isHidden = false
+            self.pickerBgView.isHidden = false
+        }
+        else {
+            self.pickerView.isHidden = true
+            self.pickerBgView.isHidden = true
+        }
+    }
+    
+    @IBAction func pickerDoneAction() {
+        
+        self.pickerView.isHidden = true
+        self.pickerBgView.isHidden = true
+    }
+    
     //MARK -
     
     private func addBackButton() {
@@ -84,4 +105,35 @@ extension DocumentsViewController:UITableViewDataSource {
 
 extension DocumentsViewController:UITableViewDelegate {
     
+}
+
+
+extension DocumentsViewController:UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 2
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 300, height: 40))
+        let label = UILabel.init(frame: view.frame)
+        label.text = (row == 0) ? "Vessel name" : "Document number"
+        label.textColor = UIColor.black
+        label.font = UIFont.init(name: "Helvetica", size: 15.0)
+        view.addSubview(label)
+        return view
+    }
+}
+
+extension DocumentsViewController:UIPickerViewDelegate {
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        self.shipmentSelectionButton.setTitle((row == 0) ? "Vessel name" : "Document number", for: UIControlState.normal)
+    }
 }

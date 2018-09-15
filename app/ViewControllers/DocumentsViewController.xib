@@ -19,8 +19,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentsViewController" customModule="app" customModuleProvider="target">
             <connections>
+                <outlet property="pickerBgView" destination="JMd-5V-qci" id="Ycj-lF-UqA"/>
+                <outlet property="pickerView" destination="0CY-qO-kdm" id="anE-j2-Ppg"/>
                 <outlet property="requestContainerView" destination="JiX-cF-BwB" id="qGy-Eh-krl"/>
                 <outlet property="segmentedControl" destination="yMR-Ue-Rhs" id="Wva-XF-YPv"/>
+                <outlet property="shipmentSelectionButton" destination="VbS-9c-640" id="fp7-xY-Mgf"/>
                 <outlet property="tableView" destination="vdX-p2-SfH" id="23M-Xv-i1l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -94,6 +97,9 @@
                                     <state key="normal" title="Vessel Name">
                                         <color key="titleColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="searchDropDownAction" destination="-1" eventType="touchUpInside" id="MOZ-8m-RgG"/>
+                                    </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="wuI-p6-KSU">
                                     <rect key="frame" x="87" y="21" width="4" height="4"/>
@@ -193,11 +199,43 @@
                         <constraint firstAttribute="trailing" secondItem="aWO-Vg-Y5B" secondAttribute="trailing" constant="8" id="y11-D0-RR4"/>
                     </constraints>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMd-5V-qci">
+                    <rect key="frame" x="0.0" y="423" width="375" height="244"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2O-Ze-VtG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <items>
+                                <barButtonItem width="335" style="plain" systemItem="fixedSpace" id="0j7-yb-s0U"/>
+                                <barButtonItem title="Done" style="done" id="Hge-3p-mJk">
+                                    <connections>
+                                        <action selector="pickerDoneAction" destination="-1" id="3vu-cj-e1Y"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="x2O-Ze-VtG" firstAttribute="top" secondItem="JMd-5V-qci" secondAttribute="top" id="0mH-ck-NGS"/>
+                        <constraint firstAttribute="trailing" secondItem="x2O-Ze-VtG" secondAttribute="trailing" id="im5-Lf-3mW"/>
+                        <constraint firstItem="x2O-Ze-VtG" firstAttribute="leading" secondItem="JMd-5V-qci" secondAttribute="leading" id="yVX-Z6-UcS"/>
+                    </constraints>
+                </view>
+                <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0CY-qO-kdm">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="tintColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Lhj-nB-PIB"/>
+                        <outlet property="delegate" destination="-1" id="0tD-Zk-PcX"/>
+                    </connections>
+                </pickerView>
             </subviews>
             <color key="backgroundColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="DOF-mM-JfF" firstAttribute="top" secondItem="KbA-FX-KiE" secondAttribute="bottom" constant="2.5" id="075-4H-BY3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JiX-cF-BwB" secondAttribute="trailing" id="2Cl-Zp-Cbc"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="height" secondItem="0CY-qO-kdm" secondAttribute="height" constant="28" id="4mg-NE-1qs"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="leading" secondItem="0CY-qO-kdm" secondAttribute="leading" id="60r-iV-Ppt"/>
                 <constraint firstItem="JiX-cF-BwB" firstAttribute="top" secondItem="yMR-Ue-Rhs" secondAttribute="bottom" constant="28" id="78e-uq-EFk"/>
                 <constraint firstItem="vdX-p2-SfH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Dl-A9-daH"/>
                 <constraint firstItem="vdX-p2-SfH" firstAttribute="top" secondItem="yMR-Ue-Rhs" secondAttribute="bottom" constant="28" id="81W-4t-9nI"/>
@@ -205,10 +243,17 @@
                 <constraint firstItem="KbA-FX-KiE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="K53-Gt-ofE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JiX-cF-BwB" secondAttribute="bottom" id="NdZ-8v-2iJ"/>
                 <constraint firstItem="vdX-p2-SfH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="3" id="SY2-6c-SnA"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="trailing" secondItem="0CY-qO-kdm" secondAttribute="trailing" id="VMH-kW-NkH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0CY-qO-kdm" secondAttribute="trailing" id="WER-Fb-AyM"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="width" secondItem="0CY-qO-kdm" secondAttribute="width" id="Z1i-Yr-rJh"/>
                 <constraint firstItem="yMR-Ue-Rhs" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aEq-hn-LSL"/>
                 <constraint firstItem="DOF-mM-JfF" firstAttribute="centerX" secondItem="KbA-FX-KiE" secondAttribute="centerX" id="clB-yi-LWY"/>
                 <constraint firstItem="JiX-cF-BwB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g44-ML-03r"/>
+                <constraint firstItem="0CY-qO-kdm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iHv-3U-2Jq"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="top" secondItem="0CY-qO-kdm" secondAttribute="top" constant="-28" id="j1K-WH-YJC"/>
+                <constraint firstItem="JMd-5V-qci" firstAttribute="bottom" secondItem="0CY-qO-kdm" secondAttribute="bottom" id="qj5-7G-IaG"/>
                 <constraint firstItem="JiX-cF-BwB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="r45-K4-5Vj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0CY-qO-kdm" secondAttribute="bottom" id="wUQ-A5-7cf"/>
                 <constraint firstItem="yMR-Ue-Rhs" firstAttribute="top" secondItem="DOF-mM-JfF" secondAttribute="bottom" constant="17" id="x9B-nV-N1W"/>
                 <constraint firstItem="KbA-FX-KiE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="xMj-co-jpj"/>
             </constraints>
