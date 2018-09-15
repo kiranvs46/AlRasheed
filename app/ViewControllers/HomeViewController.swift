@@ -32,6 +32,7 @@ class HomeViewController: BaseViewController {
 
         setUpNavigationBar()
         setSlideMenuDelegate()
+        hideKeyboardWhenTappedAround()
         
         self.currentTableType = TableType.shipments
         self.tableView.register(UINib.init(nibName:"RecentShipmentTableViewCell", bundle: nil), forCellReuseIdentifier: "RecentShipmentCellIdentifier")
@@ -52,8 +53,8 @@ class HomeViewController: BaseViewController {
     
     private func setSlideMenuDelegate() {
         
-        //let slideMenu = (self.navigationController?.parent as! KYDrawerController).drawerViewController as! SlideMenuViewController
-        //slideMenu.slideMenuDelegate = self
+        let slideMenu = (self.navigationController?.parent as! KYDrawerController).drawerViewController as! SlideMenuViewController
+        slideMenu.slideMenuDelegate = self
     }
     
     private func hideSlideMenu() {
@@ -166,9 +167,6 @@ extension HomeViewController:SlideMenuDelegate {
     func didTapAbout() {
         
         hideSlideMenu()
-        let vc = LoginViewController.init(nibName: "LoginViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
-        return
         let aboutVC = AboutViewController.init(nibName: "AboutViewController", bundle: nil)
         self.navigationController?.pushViewController(aboutVC, animated: true)
     }

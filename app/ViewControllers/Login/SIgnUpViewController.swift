@@ -10,10 +10,16 @@ import UIKit
 
 class SIgnUpViewController: UIViewController {
 
+    
+    @IBOutlet weak var scrollView:UIScrollView!
+    @IBOutlet weak var successView:UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addBackButton()
+        setScrollView()
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +28,28 @@ class SIgnUpViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK -
+    
+    private func setScrollView() {
+        
+        scrollView.contentSize = CGSize.init(width: self.view.bounds.width, height: 1000)
     }
-    */
+    
+    private func addBackButton() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back_arrow"), style: .plain, target: self, action: #selector(backAction))
+        self.navigationItem.rightBarButtonItem = nil
+    }
+    
+    @objc func backAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
 
+    //MARK - IBActions
+    
+    @IBAction func signupAction() {
+        
+        self.successView.isHidden = false
+    }
 }
+

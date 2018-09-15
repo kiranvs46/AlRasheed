@@ -14,6 +14,7 @@ class ShipmentDetailViewController: BaseViewController {
         super.viewDidLoad()
 
         addBackButton()
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {

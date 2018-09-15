@@ -7,16 +7,14 @@
 //
 
 import UIKit
+import KYDrawerController
 
 class LoginViewController: UIViewController {
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,20 +26,20 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction() {
         
+        let otpVC = OTPViewController.init(nibName: "OTPViewController", bundle: nil)
+        self.navigationController?.pushViewController(otpVC, animated: true)
     }
     
     @IBAction func forgotPasswordAction() {
         
         let forgotVC = ForgotPasswordViewController.init(nibName: "ForgotPasswordViewController", bundle: nil)
-        let navController = UINavigationController.init()
-        navController.pushViewController(forgotVC, animated: true)
+        self.navigationController?.pushViewController(forgotVC, animated: true)
     }
     
     @IBAction func signupAction() {
         
         let signupVC = SIgnUpViewController.init(nibName: "SIgnUpViewController", bundle: nil)
-        let navController = UINavigationController.init()
-        navController.pushViewController(signupVC, animated: true)
+        self.navigationController?.pushViewController(signupVC, animated: true)
     }
-    
 }
+

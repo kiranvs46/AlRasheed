@@ -43,21 +43,15 @@ class LaunchViewController: UIViewController {
             self.progressBar.setProgress(1.0, animated: true)
             self.view.layoutIfNeeded()
         }) { (finished) in
-            self.setHomeVC()
+            self.showLoginScreen()
         }
     }
     
-    @objc private func setHomeVC() {
+    private func showLoginScreen() {
         
-        let homeViewController = HomeViewController()
-        let drawerViewController = SlideMenuViewController()
-        let drawerController     = KYDrawerController.init(drawerDirection: .left, drawerWidth: 250)
-        drawerController.mainViewController = UINavigationController(
-            rootViewController: homeViewController
-        )
-        drawerController.drawerViewController = drawerViewController
-        
+        let loginVC = LoginViewController.init(nibName:"LoginViewController", bundle: nil)
         let window = UIApplication.shared.windows[0]
-        window.rootViewController = drawerController
+        window.rootViewController = UINavigationController.init(rootViewController: loginVC)
     }
+    
 }

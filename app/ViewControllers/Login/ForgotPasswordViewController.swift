@@ -17,7 +17,8 @@ class ForgotPasswordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addBackButton()
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,4 +35,16 @@ class ForgotPasswordViewController: BaseViewController {
         successView.isHidden = false
     }
 
+    //MARK -
+    
+    private func addBackButton() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back_arrow"), style: .plain, target: self, action: #selector(backAction))
+        self.navigationItem.rightBarButtonItem = nil
+    }
+    
+    @objc func backAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
+

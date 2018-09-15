@@ -14,6 +14,7 @@ class SupportViewController: UIViewController {
         super.viewDidLoad()
 
         addBackButton()
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {

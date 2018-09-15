@@ -19,6 +19,7 @@ class DocumentsViewController: BaseViewController {
         super.viewDidLoad()
 
         addBackButton()
+        hideKeyboardWhenTappedAround()
         self.tableView.register(UINib.init(nibName:"DocumentsTableViewCell", bundle: nil), forCellReuseIdentifier: "DocumentsCellIdentifier")
     }
 

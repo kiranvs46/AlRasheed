@@ -15,9 +15,9 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPViewController" customModule="app" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PINViewController" customModule="app" customModuleProvider="target">
             <connections>
-                <outlet property="otpField" destination="YfV-jb-nTd" id="REJ-Sm-Ppe"/>
+                <outlet property="pinField" destination="Nax-1e-3rt" id="Nls-lE-H6U"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,20 +26,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-d1-gva">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="P2N-cY-cwX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-rw-6xB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ku6-ij-e0L">
                     <rect key="frame" x="119" y="64" width="137" height="45"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-jb-nTd" customClass="RSFloatInputView" customModule="RSFloatInputView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-1e-3rt" customClass="RSFloatInputView" customModule="RSFloatInputView">
                     <rect key="frame" x="115" y="164" width="145" height="70"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="70" id="B5u-PL-V3L"/>
+                        <constraint firstAttribute="height" constant="70" id="64m-we-qpZ"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="ENTER OTP"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderStringKey" value="ENTER PIN"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="applyTransform" value="NO"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                             <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,32 +65,35 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                             <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="inputFontSize">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4H-7q-piI">
-                    <rect key="frame" x="151.5" y="262" width="72" height="26"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suy-2c-Lci">
+                    <rect key="frame" x="154.5" y="262" width="65" height="26"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                    <state key="normal" title="resend OTP?">
+                    <state key="normal" title="Forgot PIN?">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FsM-d1-gva" secondAttribute="trailing" id="88s-E2-E93"/>
-                <constraint firstItem="H4H-7q-piI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MuX-gP-IJV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="FsM-d1-gva" secondAttribute="top" constant="20" id="QmQ-qR-qWu"/>
-                <constraint firstItem="FsM-d1-gva" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WnK-ku-odi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YfV-jb-nTd" secondAttribute="trailing" constant="115" id="X8O-vB-fmG"/>
-                <constraint firstItem="H4H-7q-piI" firstAttribute="top" secondItem="YfV-jb-nTd" secondAttribute="bottom" constant="28" id="ZQZ-RP-jhC"/>
-                <constraint firstItem="YfV-jb-nTd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="115" id="bRm-H8-fV8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FsM-d1-gva" secondAttribute="bottom" id="bm4-SI-xLP"/>
-                <constraint firstItem="Re0-rw-6xB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bu5-EJ-tX0"/>
-                <constraint firstItem="YfV-jb-nTd" firstAttribute="top" secondItem="Re0-rw-6xB" secondAttribute="bottom" constant="55" id="tyr-fz-1Lh"/>
-                <constraint firstItem="Re0-rw-6xB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="wFF-0X-oxF"/>
+                <constraint firstItem="Ku6-ij-e0L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="0YL-2q-dY4"/>
+                <constraint firstItem="Nax-1e-3rt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="115" id="FpH-j9-l4k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nax-1e-3rt" secondAttribute="trailing" constant="115" id="Gh8-f5-Ayt"/>
+                <constraint firstItem="Ku6-ij-e0L" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KAb-Z3-k63"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P2N-cY-cwX" secondAttribute="bottom" id="T9t-SH-yDK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P2N-cY-cwX" secondAttribute="trailing" id="bDb-Cj-bfq"/>
+                <constraint firstItem="Suy-2c-Lci" firstAttribute="centerX" secondItem="Nax-1e-3rt" secondAttribute="centerX" id="cAy-53-rix"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="P2N-cY-cwX" secondAttribute="top" constant="20" id="cxg-pr-n5o"/>
+                <constraint firstItem="P2N-cY-cwX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gOT-Pn-Cm8"/>
+                <constraint firstItem="Nax-1e-3rt" firstAttribute="top" secondItem="Ku6-ij-e0L" secondAttribute="bottom" constant="55" id="mac-mE-Nde"/>
+                <constraint firstItem="Nax-1e-3rt" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tp7-CB-YCM"/>
+                <constraint firstItem="Suy-2c-Lci" firstAttribute="top" secondItem="Nax-1e-3rt" secondAttribute="bottom" constant="28" id="vox-1G-lGE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
     <resources>

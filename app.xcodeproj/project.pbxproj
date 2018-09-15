@@ -57,6 +57,8 @@
 		9F8AAF79214CE0C200E2D9D6 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */; };
 		9F8AAF7C214CE45700E2D9D6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7A214CE45700E2D9D6 /* LaunchViewController.swift */; };
 		9F8AAF7D214CE45700E2D9D6 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7B214CE45700E2D9D6 /* LaunchViewController.xib */; };
+		9F8AAF80214CF49000E2D9D6 /* PINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7E214CF49000E2D9D6 /* PINViewController.swift */; };
+		9F8AAF81214CF49000E2D9D6 /* PINViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF7F214CF49000E2D9D6 /* PINViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		9F8AAF7A214CE45700E2D9D6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9F8AAF7B214CE45700E2D9D6 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		9F8AAF7E214CF49000E2D9D6 /* PINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINViewController.swift; sourceTree = "<group>"; };
+		9F8AAF7F214CF49000E2D9D6 /* PINViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINViewController.xib; sourceTree = "<group>"; };
 		BA240348381C62DF750A839A /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -315,6 +319,8 @@
 				9F8AAF6F214CD72500E2D9D6 /* SIgnUpViewController.xib */,
 				9F8AAF72214CDFA100E2D9D6 /* OTPViewController.swift */,
 				9F8AAF73214CDFA100E2D9D6 /* OTPViewController.xib */,
+				9F8AAF7E214CF49000E2D9D6 /* PINViewController.swift */,
+				9F8AAF7F214CF49000E2D9D6 /* PINViewController.xib */,
 				9F8AAF76214CE0C200E2D9D6 /* ForgotPasswordViewController.swift */,
 				9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */,
 			);
@@ -454,6 +460,7 @@
 				9F1D7A03214AAF55009223E6 /* SupportViewController.xib in Resources */,
 				9F1D79E7214A7266009223E6 /* RecentShipmentTableViewCell.xib in Resources */,
 				9F1D79F3214A8037009223E6 /* AllShipmentAndPaymentViewController.xib in Resources */,
+				9F8AAF81214CF49000E2D9D6 /* PINViewController.xib in Resources */,
 				9F8AAF6D214CD42000E2D9D6 /* LoginViewController.xib in Resources */,
 				9F7C4098214A4BFF0085D20A /* NotificationTableViewCell.xib in Resources */,
 				9F26A6E2213BCB6800AD1AD9 /* ProfileViewController.xib in Resources */,
@@ -673,6 +680,7 @@
 				9F8AAF7C214CE45700E2D9D6 /* LaunchViewController.swift in Sources */,
 				9F1D79E2214A5BBA009223E6 /* AboutViewController.swift in Sources */,
 				9F26A6CF213BB4F600AD1AD9 /* HomeViewController.swift in Sources */,
+				9F8AAF80214CF49000E2D9D6 /* PINViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
