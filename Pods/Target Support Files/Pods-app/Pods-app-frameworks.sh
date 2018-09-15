@@ -135,9 +135,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSFloatInputView/RSFloatInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RaisePlaceholder/RaisePlaceholder.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSFloatInputView/RSFloatInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RaisePlaceholder/RaisePlaceholder.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

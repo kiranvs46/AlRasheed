@@ -47,6 +47,14 @@
 		9F7C4093214A4A640085D20A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7C4091214A4A640085D20A /* NotificationViewController.xib */; };
 		9F7C4097214A4BFF0085D20A /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7C4095214A4BFF0085D20A /* NotificationTableViewCell.swift */; };
 		9F7C4098214A4BFF0085D20A /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7C4096214A4BFF0085D20A /* NotificationTableViewCell.xib */; };
+		9F8AAF6C214CD42000E2D9D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF6A214CD42000E2D9D6 /* LoginViewController.swift */; };
+		9F8AAF6D214CD42000E2D9D6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF6B214CD42000E2D9D6 /* LoginViewController.xib */; };
+		9F8AAF70214CD72500E2D9D6 /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF6E214CD72500E2D9D6 /* SIgnUpViewController.swift */; };
+		9F8AAF71214CD72500E2D9D6 /* SIgnUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF6F214CD72500E2D9D6 /* SIgnUpViewController.xib */; };
+		9F8AAF74214CDFA100E2D9D6 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF72214CDFA100E2D9D6 /* OTPViewController.swift */; };
+		9F8AAF75214CDFA100E2D9D6 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF73214CDFA100E2D9D6 /* OTPViewController.xib */; };
+		9F8AAF78214CE0C200E2D9D6 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8AAF76214CE0C200E2D9D6 /* ForgotPasswordViewController.swift */; };
+		9F8AAF79214CE0C200E2D9D6 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +126,14 @@
 		9F7C4091214A4A640085D20A /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		9F7C4095214A4BFF0085D20A /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		9F7C4096214A4BFF0085D20A /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		9F8AAF6A214CD42000E2D9D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9F8AAF6B214CD42000E2D9D6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9F8AAF6E214CD72500E2D9D6 /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
+		9F8AAF6F214CD72500E2D9D6 /* SIgnUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SIgnUpViewController.xib; sourceTree = "<group>"; };
+		9F8AAF72214CDFA100E2D9D6 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		9F8AAF73214CDFA100E2D9D6 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		9F8AAF76214CE0C200E2D9D6 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		BA240348381C62DF750A839A /* Pods_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +253,7 @@
 		9F26A6CA213BB49300AD1AD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F8AAF69214CD3F500E2D9D6 /* Login */,
 				9F1D79DE214A597C009223E6 /* BaseViewController.swift */,
 				9F26A6CD213BB4F600AD1AD9 /* HomeViewController.swift */,
 				9F26A6CE213BB4F600AD1AD9 /* HomeViewController.xib */,
@@ -281,6 +298,21 @@
 				9F1D79FD214AA97F009223E6 /* DocumentsTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		9F8AAF69214CD3F500E2D9D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9F8AAF6A214CD42000E2D9D6 /* LoginViewController.swift */,
+				9F8AAF6B214CD42000E2D9D6 /* LoginViewController.xib */,
+				9F8AAF6E214CD72500E2D9D6 /* SIgnUpViewController.swift */,
+				9F8AAF6F214CD72500E2D9D6 /* SIgnUpViewController.xib */,
+				9F8AAF72214CDFA100E2D9D6 /* OTPViewController.swift */,
+				9F8AAF73214CDFA100E2D9D6 /* OTPViewController.xib */,
+				9F8AAF76214CE0C200E2D9D6 /* ForgotPasswordViewController.swift */,
+				9F8AAF77214CE0C200E2D9D6 /* ForgotPasswordViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		B7B95B50C2388B7CC3FDA119 /* Pods */ = {
@@ -415,9 +447,12 @@
 				9F1D7A03214AAF55009223E6 /* SupportViewController.xib in Resources */,
 				9F1D79E7214A7266009223E6 /* RecentShipmentTableViewCell.xib in Resources */,
 				9F1D79F3214A8037009223E6 /* AllShipmentAndPaymentViewController.xib in Resources */,
+				9F8AAF6D214CD42000E2D9D6 /* LoginViewController.xib in Resources */,
 				9F7C4098214A4BFF0085D20A /* NotificationTableViewCell.xib in Resources */,
 				9F26A6E2213BCB6800AD1AD9 /* ProfileViewController.xib in Resources */,
+				9F8AAF71214CD72500E2D9D6 /* SIgnUpViewController.xib in Resources */,
 				9F7C408E214A49580085D20A /* Images.xcassets in Resources */,
+				9F8AAF79214CE0C200E2D9D6 /* ForgotPasswordViewController.xib in Resources */,
 				9F26A6C9213BB1C900AD1AD9 /* BaseAPI in Resources */,
 				9F26A6A3213BB0E900AD1AD9 /* LaunchScreen.storyboard in Resources */,
 				9F26A6A0213BB0E900AD1AD9 /* Assets.xcassets in Resources */,
@@ -428,6 +463,7 @@
 				9F1D79FF214AA97F009223E6 /* DocumentsTableViewCell.xib in Resources */,
 				9F26A6DE213BBE2D00AD1AD9 /* SlideMenuViewController.xib in Resources */,
 				9F1D79FB214AA57D009223E6 /* DocumentsViewController.xib in Resources */,
+				9F8AAF75214CDFA100E2D9D6 /* OTPViewController.xib in Resources */,
 				9F1D79E3214A5BBA009223E6 /* AboutViewController.xib in Resources */,
 				9F26A6D0213BB4F600AD1AD9 /* HomeViewController.xib in Resources */,
 			);
@@ -491,10 +527,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-app/Pods-app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/RSFloatInputView/RSFloatInputView.framework",
+				"${BUILT_PRODUCTS_DIR}/RaisePlaceholder/RaisePlaceholder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSFloatInputView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RaisePlaceholder.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -604,11 +644,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8AAF74214CDFA100E2D9D6 /* OTPViewController.swift in Sources */,
+				9F8AAF6C214CD42000E2D9D6 /* LoginViewController.swift in Sources */,
 				9F1D79FA214AA57D009223E6 /* DocumentsViewController.swift in Sources */,
+				9F8AAF70214CD72500E2D9D6 /* SIgnUpViewController.swift in Sources */,
 				9F1D79E6214A7266009223E6 /* RecentShipmentTableViewCell.swift in Sources */,
 				9F1D7A02214AAF55009223E6 /* SupportViewController.swift in Sources */,
 				9F26A699213BB0E900AD1AD9 /* AppDelegate.swift in Sources */,
 				9F1686C82142CDF90023AF2C /* LaunchView.swift in Sources */,
+				9F8AAF78214CE0C200E2D9D6 /* ForgotPasswordViewController.swift in Sources */,
 				9F26A6DD213BBE2D00AD1AD9 /* SlideMenuViewController.swift in Sources */,
 				9F7C4092214A4A640085D20A /* NotificationViewController.swift in Sources */,
 				9F7C4097214A4BFF0085D20A /* NotificationTableViewCell.swift in Sources */,

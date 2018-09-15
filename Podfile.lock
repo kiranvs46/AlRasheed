@@ -1,12 +1,18 @@
 PODS:
   - KYDrawerController (2.0.4)
+  - RaisePlaceholder (1.0.3)
+  - RSFloatInputView (1.0.0)
 
 DEPENDENCIES:
   - KYDrawerController
+  - RaisePlaceholder
+  - RSFloatInputView
 
 SPEC CHECKSUMS:
   KYDrawerController: cf5839877c442132123e9d482f458821026defdf
+  RaisePlaceholder: e77c8565f556e25659bdf1b9a77647a952b8cb70
+  RSFloatInputView: fea19c7b6c1228047379ee38ca9bca9e9d5a0fd6
 
-PODFILE CHECKSUM: 122356f71d6a1005036effa6d5acc9b68709c2e6
+PODFILE CHECKSUM: bd31dab3b8a238960ec083e4132ee6d9f09bb3e9
 
 COCOAPODS: 1.4.0

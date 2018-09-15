@@ -172,6 +172,9 @@ extension HomeViewController:SlideMenuDelegate {
     func didTapAbout() {
         
         hideSlideMenu()
+        let vc = LoginViewController.init(nibName: "LoginViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        return
         let aboutVC = AboutViewController.init(nibName: "AboutViewController", bundle: nil)
         self.navigationController?.pushViewController(aboutVC, animated: true)
     }
