@@ -29,6 +29,8 @@ class BaseViewController: UIViewController {
     func setUpNavigationBar() {
         
         let imgView = UIImageView.init(image: UIImage.init(named: "logo"))
+        imgView.center = (self.navigationController?.navigationBar.center)!
+        imgView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imgView
         
         self.navigationController?.navigationBar.barTintColor = UIColor.white

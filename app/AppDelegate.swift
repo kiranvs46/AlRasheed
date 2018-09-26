@@ -8,6 +8,7 @@
 
 import UIKit
 import KYDrawerController
+import Drift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
+        Drift.setup("a42kvhcabskh")
+        Drift.registerUser("test", email: "area5544@gmail.com")
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
             

@@ -21,7 +21,7 @@ class DocumentsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addBackButton()
+        //addBackButton()
         hideKeyboardWhenTappedAround()
         self.tableView.register(UINib.init(nibName:"DocumentsTableViewCell", bundle: nil), forCellReuseIdentifier: "DocumentsCellIdentifier")
     }
@@ -105,6 +105,9 @@ extension DocumentsViewController:UITableViewDataSource {
 
 extension DocumentsViewController:UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 

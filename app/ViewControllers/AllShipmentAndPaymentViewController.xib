@@ -18,6 +18,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllShipmentAndPaymentViewController" customModule="app" customModuleProvider="target">
             <connections>
+                <outlet property="pickerBgView" destination="6xd-vh-EzF" id="t6S-dH-1vg"/>
+                <outlet property="pickerView" destination="AGb-lz-ZJQ" id="HiU-S1-k1M"/>
+                <outlet property="searchButton" destination="E4m-wC-NBm" id="Yk5-IX-SP7"/>
                 <outlet property="subTitleLabel" destination="S15-rx-WV9" id="J7M-bf-Ydq"/>
                 <outlet property="tableView" destination="xwg-6w-HeA" id="qir-fB-FlS"/>
                 <outlet property="titleLabel" destination="blj-BT-W35" id="IRr-dx-btY"/>
@@ -55,6 +58,9 @@
                                     <state key="normal" title="Vessel Name">
                                         <color key="titleColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="searchDropDownAction" destination="-1" eventType="touchUpInside" id="4PF-T6-cLo"/>
+                                    </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="013-JL-cHi">
                                     <rect key="frame" x="87" y="21" width="4" height="4"/>
@@ -145,9 +151,14 @@
                     <subviews>
                         <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LA7-Bo-82a">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <items>
                                 <barButtonItem width="335" style="plain" systemItem="fixedSpace" id="2dW-a8-2hK"/>
-                                <barButtonItem title="Done" style="done" id="DmH-dN-3fC"/>
+                                <barButtonItem title="Done" style="done" id="DmH-dN-3fC">
+                                    <connections>
+                                        <action selector="pickerDoneAction" destination="-1" id="SBt-JX-360"/>
+                                    </connections>
+                                </barButtonItem>
                             </items>
                         </toolbar>
                     </subviews>
@@ -161,6 +172,10 @@
                 <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-lz-ZJQ">
                     <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                     <color key="tintColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bXh-vt-ue5"/>
+                        <outlet property="delegate" destination="-1" id="DXA-iY-rcL"/>
+                    </connections>
                 </pickerView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

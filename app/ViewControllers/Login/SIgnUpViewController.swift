@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SIgnUpViewController: UIViewController {
+class SIgnUpViewController: BaseViewController {
 
     
     @IBOutlet weak var scrollView:UIScrollView!

@@ -20,7 +20,7 @@ class PINViewController: UIViewController {
 
         addBackButton() 
         pinField.textField.delegate = self
-        pinField.becomeFirstResponder()
+        pinField.textField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

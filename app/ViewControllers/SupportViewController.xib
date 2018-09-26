@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -103,6 +104,17 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18X-ad-rc7">
+                    <rect key="frame" x="310" y="602" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="18X-ad-rc7" secondAttribute="height" multiplier="1:1" id="6ic-bC-CxH"/>
+                        <constraint firstAttribute="height" constant="45" id="Vqx-L8-bbw"/>
+                    </constraints>
+                    <state key="normal" image="chat_bubble"/>
+                    <connections>
+                        <action selector="chatButtonAction" destination="-1" eventType="touchUpInside" id="IXN-yb-CLt"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -116,12 +128,15 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="amm-pT-zGe" secondAttribute="trailing" constant="16" id="QHr-sp-ts7"/>
                 <constraint firstItem="amm-pT-zGe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TXn-vI-JY1"/>
                 <constraint firstItem="yQn-W7-Ztr" firstAttribute="top" secondItem="yLX-k3-8TC" secondAttribute="bottom" constant="9" id="UU1-yd-FYl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="18X-ad-rc7" secondAttribute="bottom" constant="20" id="VS0-xF-moL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="18X-ad-rc7" secondAttribute="trailing" constant="20" id="VpI-8f-gdK"/>
                 <constraint firstItem="85L-kl-sal" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Y9R-rG-oTM"/>
                 <constraint firstItem="Hgu-Sz-NlV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="YEi-SA-qtf"/>
                 <constraint firstItem="yQn-W7-Ztr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="YgW-uC-u50"/>
                 <constraint firstItem="yLX-k3-8TC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ymn-kN-Gs7"/>
                 <constraint firstItem="fNM-iY-NQk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Yth-Dm-nI8"/>
                 <constraint firstItem="yLX-k3-8TC" firstAttribute="top" secondItem="Hgu-Sz-NlV" secondAttribute="bottom" constant="8" id="fHA-n9-ByB"/>
+                <constraint firstItem="18X-ad-rc7" firstAttribute="width" secondItem="18X-ad-rc7" secondAttribute="height" multiplier="1:1" id="far-B6-XFI"/>
                 <constraint firstItem="85L-kl-sal" firstAttribute="top" secondItem="yQn-W7-Ztr" secondAttribute="bottom" constant="16" id="ge4-ez-zcD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="85L-kl-sal" secondAttribute="trailing" constant="17" id="iMT-hP-WaN"/>
                 <constraint firstItem="Hgu-Sz-NlV" firstAttribute="top" secondItem="FLe-Mb-iCs" secondAttribute="bottom" constant="11" id="kLY-FR-zpM"/>
@@ -138,4 +153,7 @@
             <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="chat_bubble" width="64" height="64"/>
+    </resources>
 </document>

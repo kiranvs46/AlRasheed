@@ -35,7 +35,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhp-Pa-fJr">
                     <rect key="frame" x="125" y="20" width="250" height="647"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58u-3y-Lp8">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_img_temp" translatesAutoresizingMaskIntoConstraints="NO" id="58u-3y-Lp8">
                             <rect key="frame" x="8" y="24" width="75" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="BkQ-a8-Svb"/>
@@ -83,11 +83,11 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cv-7G-IMo">
                             <rect key="frame" x="5" y="139" width="240" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="09O-1I-scr">
-                                    <rect key="frame" x="5" y="10" width="30" height="30"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_shipment_icon" translatesAutoresizingMaskIntoConstraints="NO" id="09O-1I-scr">
+                                    <rect key="frame" x="5" y="17" width="15" height="15"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="30" id="0d7-df-hTA"/>
-                                        <constraint firstAttribute="height" constant="30" id="1M3-It-I2g"/>
+                                        <constraint firstAttribute="width" constant="15" id="0d7-df-hTA"/>
+                                        <constraint firstAttribute="height" constant="15" id="1M3-It-I2g"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwe-Fu-91l">
@@ -106,18 +106,18 @@
                                 <constraint firstItem="vwe-Fu-91l" firstAttribute="centerY" secondItem="09O-1I-scr" secondAttribute="centerY" id="0Jz-sI-ieP"/>
                                 <constraint firstItem="09O-1I-scr" firstAttribute="centerY" secondItem="1Cv-7G-IMo" secondAttribute="centerY" id="2Y7-aE-AHC"/>
                                 <constraint firstAttribute="height" constant="50" id="9z6-MC-9GH"/>
-                                <constraint firstItem="vwe-Fu-91l" firstAttribute="leading" secondItem="09O-1I-scr" secondAttribute="trailing" constant="15" id="Puy-n2-QVe"/>
+                                <constraint firstItem="vwe-Fu-91l" firstAttribute="leading" secondItem="09O-1I-scr" secondAttribute="trailing" constant="30" id="Puy-n2-QVe"/>
                                 <constraint firstItem="09O-1I-scr" firstAttribute="leading" secondItem="1Cv-7G-IMo" secondAttribute="leading" constant="5" id="wLe-bx-5WH"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-gk-Yg7">
                             <rect key="frame" x="5" y="194" width="240" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YsL-Ki-vsj">
-                                    <rect key="frame" x="5" y="10" width="30" height="30"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ship_info" translatesAutoresizingMaskIntoConstraints="NO" id="YsL-Ki-vsj">
+                                    <rect key="frame" x="5" y="17" width="15" height="15"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="cch-lm-9Kw"/>
-                                        <constraint firstAttribute="width" constant="30" id="puo-8Q-EFf"/>
+                                        <constraint firstAttribute="height" constant="15" id="cch-lm-9Kw"/>
+                                        <constraint firstAttribute="width" constant="15" id="puo-8Q-EFf"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yff-xA-NAF">
@@ -137,17 +137,17 @@
                                 <constraint firstAttribute="height" constant="50" id="GpP-Gn-ohD"/>
                                 <constraint firstItem="YsL-Ki-vsj" firstAttribute="centerY" secondItem="EZc-gk-Yg7" secondAttribute="centerY" id="Rln-bO-nPY"/>
                                 <constraint firstItem="yff-xA-NAF" firstAttribute="centerY" secondItem="YsL-Ki-vsj" secondAttribute="centerY" id="Yvb-eK-Nde"/>
-                                <constraint firstItem="yff-xA-NAF" firstAttribute="leading" secondItem="YsL-Ki-vsj" secondAttribute="trailing" constant="15" id="muN-pE-awa"/>
+                                <constraint firstItem="yff-xA-NAF" firstAttribute="leading" secondItem="YsL-Ki-vsj" secondAttribute="trailing" constant="30" id="muN-pE-awa"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZO-xt-h0K">
                             <rect key="frame" x="5" y="249" width="240" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXy-qe-AoF">
-                                    <rect key="frame" x="5" y="10" width="30" height="30"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XXy-qe-AoF">
+                                    <rect key="frame" x="5" y="17" width="15" height="15"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="40U-Kw-OfY"/>
-                                        <constraint firstAttribute="width" constant="30" id="9qt-Qv-9n8"/>
+                                        <constraint firstAttribute="height" constant="15" id="40U-Kw-OfY"/>
+                                        <constraint firstAttribute="width" constant="15" id="9qt-Qv-9n8"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfz-we-zlf">
@@ -166,18 +166,18 @@
                                 <constraint firstItem="XXy-qe-AoF" firstAttribute="leading" secondItem="ZZO-xt-h0K" secondAttribute="leading" constant="5" id="3vH-8u-4Yt"/>
                                 <constraint firstItem="gfz-we-zlf" firstAttribute="centerY" secondItem="XXy-qe-AoF" secondAttribute="centerY" id="BBW-QP-3uF"/>
                                 <constraint firstItem="XXy-qe-AoF" firstAttribute="centerY" secondItem="ZZO-xt-h0K" secondAttribute="centerY" id="dq0-77-jYr"/>
-                                <constraint firstItem="gfz-we-zlf" firstAttribute="leading" secondItem="XXy-qe-AoF" secondAttribute="trailing" constant="15" id="nOM-lY-IIR"/>
+                                <constraint firstItem="gfz-we-zlf" firstAttribute="leading" secondItem="XXy-qe-AoF" secondAttribute="trailing" constant="30" id="nOM-lY-IIR"/>
                                 <constraint firstAttribute="height" constant="50" id="tgU-1n-yeZ"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-jG-2l5">
                             <rect key="frame" x="5" y="304" width="240" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O5p-rU-JMH">
-                                    <rect key="frame" x="5" y="10" width="30" height="30"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="support_icon" translatesAutoresizingMaskIntoConstraints="NO" id="O5p-rU-JMH">
+                                    <rect key="frame" x="5" y="17" width="15" height="15"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="BNK-dQ-GlH"/>
-                                        <constraint firstAttribute="width" constant="30" id="EEH-8w-OZK"/>
+                                        <constraint firstAttribute="height" constant="15" id="BNK-dQ-GlH"/>
+                                        <constraint firstAttribute="width" constant="15" id="EEH-8w-OZK"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJy-gz-IWk">
@@ -193,7 +193,7 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="TJy-gz-IWk" firstAttribute="leading" secondItem="O5p-rU-JMH" secondAttribute="trailing" constant="15" id="3Jm-sW-ab3"/>
+                                <constraint firstItem="TJy-gz-IWk" firstAttribute="leading" secondItem="O5p-rU-JMH" secondAttribute="trailing" constant="30" id="3Jm-sW-ab3"/>
                                 <constraint firstAttribute="height" constant="50" id="LLj-cs-8XS"/>
                                 <constraint firstItem="O5p-rU-JMH" firstAttribute="leading" secondItem="sHY-jG-2l5" secondAttribute="leading" constant="5" id="Wgi-kv-61C"/>
                                 <constraint firstItem="O5p-rU-JMH" firstAttribute="centerY" secondItem="sHY-jG-2l5" secondAttribute="centerY" id="Zkx-xY-yWS"/>
@@ -308,4 +308,11 @@
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="circle_img_temp" width="150" height="150"/>
+        <image name="doc_icon" width="11" height="14"/>
+        <image name="search_shipment_icon" width="13" height="13"/>
+        <image name="ship_info" width="18" height="13"/>
+        <image name="support_icon" width="15" height="14"/>
+    </resources>
 </document>

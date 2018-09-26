@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Drift
 import KYDrawerController
 
 
@@ -114,6 +115,11 @@ class HomeViewController: BaseViewController {
         self.tableView.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .top, animated: false)
     }
     
+    @IBAction func chatButtonAction() {
+        
+        Drift.showCreateConversation()
+    }
+    
     //MARK -
     
     func animateProgressView() {
@@ -136,7 +142,8 @@ extension HomeViewController:SlideMenuDelegate {
         
         hideSlideMenu()
         let profileVC = ProfileViewController.init(nibName: "ProfileViewController", bundle: nil)
-        setViewControllerAsMain(vc: profileVC)
+        self.navigationController?.pushViewController(profileVC, animated: true)
+        //setViewControllerAsMain(vc: profileVC)
     }
     
     func didTapSearchShipment() {

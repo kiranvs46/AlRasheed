@@ -9,12 +9,14 @@
 import UIKit
 import KYDrawerController
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         hideKeyboardWhenTappedAround()
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.rightBarButtonItem = nil
     }
 
     override func didReceiveMemoryWarning() {

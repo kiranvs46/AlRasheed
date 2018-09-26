@@ -6,6 +6,7 @@ target 'app' do
   use_frameworks!
   pod 'KYDrawerController'
   pod 'RSFloatInputView'
+  pod 'Drift'
 
   # Pods for app
 

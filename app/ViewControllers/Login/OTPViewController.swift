@@ -20,7 +20,7 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         addBackButton()
         hideKeyboardWhenTappedAround()
         setTextFieldDelegate()
-        self.otpField.becomeFirstResponder()
+        self.otpField.textField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

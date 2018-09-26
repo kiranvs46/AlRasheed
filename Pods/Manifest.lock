@@ -1,18 +1,33 @@
 PODS:
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.4.1):
+    - Alamofire (~> 4.7)
+  - Drift (2.2.2):
+    - AlamofireImage (~> 3.0)
+    - ObjectMapper (~> 3.0)
+    - Starscream
+    - SVProgressHUD (~> 2.0)
   - KYDrawerController (2.0.4)
-  - RaisePlaceholder (1.0.3)
+  - ObjectMapper (3.3.0)
   - RSFloatInputView (1.0.0)
+  - Starscream (3.0.5)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - Drift
   - KYDrawerController
-  - RaisePlaceholder
   - RSFloatInputView
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Drift: f5c66ae1830705957b5a05367210187368cc2dd2
   KYDrawerController: cf5839877c442132123e9d482f458821026defdf
-  RaisePlaceholder: e77c8565f556e25659bdf1b9a77647a952b8cb70
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   RSFloatInputView: fea19c7b6c1228047379ee38ca9bca9e9d5a0fd6
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bd31dab3b8a238960ec083e4132ee6d9f09bb3e9
+PODFILE CHECKSUM: d243319e296fe5272e60f4d7029da3bcc3302873
 
 COCOAPODS: 1.4.0

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -212,6 +213,17 @@
                                 <outlet property="delegate" destination="-1" id="nO9-Tz-9j1"/>
                             </connections>
                         </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTr-xG-CVU">
+                            <rect key="frame" x="310" y="607" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="yTr-xG-CVU" secondAttribute="height" multiplier="1:1" id="cw1-Yw-6pQ"/>
+                                <constraint firstAttribute="height" constant="45" id="lmq-qj-tFj"/>
+                            </constraints>
+                            <state key="normal" image="chat_bubble"/>
+                            <connections>
+                                <action selector="chatButtonAction" destination="-1" eventType="touchUpInside" id="EYZ-ir-Qto"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0078431372550000003" green="0.094117647060000004" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -231,9 +243,11 @@
                         <constraint firstItem="GI5-YD-te7" firstAttribute="centerX" secondItem="sW6-Yl-Hco" secondAttribute="centerX" id="SM2-WV-Jlz"/>
                         <constraint firstItem="kaS-zK-QK0" firstAttribute="top" secondItem="YzD-Ii-TcH" secondAttribute="bottom" id="Wik-cd-NVl"/>
                         <constraint firstAttribute="trailing" secondItem="YzD-Ii-TcH" secondAttribute="trailing" constant="8" id="XGT-SU-FPj"/>
+                        <constraint firstAttribute="bottom" secondItem="yTr-xG-CVU" secondAttribute="bottom" constant="15" id="ar8-3b-za9"/>
                         <constraint firstItem="KKc-cL-eMV" firstAttribute="width" secondItem="hfu-G4-xRH" secondAttribute="width" id="fck-tt-MHO"/>
                         <constraint firstItem="GI5-YD-te7" firstAttribute="top" secondItem="sW6-Yl-Hco" secondAttribute="bottom" constant="16" id="lnz-S7-loV"/>
                         <constraint firstAttribute="trailing" secondItem="sW6-Yl-Hco" secondAttribute="trailing" constant="8" id="mrX-Nc-HyJ"/>
+                        <constraint firstAttribute="trailing" secondItem="yTr-xG-CVU" secondAttribute="trailing" constant="20" id="ne2-ka-FSG"/>
                         <constraint firstItem="N9s-BW-P7f" firstAttribute="top" secondItem="aK6-N7-lDm" secondAttribute="top" constant="26" id="pBR-y9-c7a"/>
                         <constraint firstItem="KKc-cL-eMV" firstAttribute="trailing" secondItem="hfu-G4-xRH" secondAttribute="trailing" id="pNW-Bn-mgo"/>
                         <constraint firstItem="KKc-cL-eMV" firstAttribute="height" secondItem="hfu-G4-xRH" secondAttribute="height" constant="28" id="qb2-wa-Etr"/>
@@ -263,6 +277,7 @@
     </objects>
     <resources>
         <image name="background" width="375" height="667"/>
+        <image name="chat_bubble" width="64" height="64"/>
         <image name="down_arrow" width="4" height="4"/>
         <image name="logo" width="137" height="45"/>
         <image name="search_icon" width="16" height="16"/>

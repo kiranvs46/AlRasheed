@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShipInfoViewController: UIViewController {
+class ShipInfoViewController: BaseViewController {
 
     
     @IBOutlet weak var tableView:UITableView!
@@ -122,4 +122,7 @@ extension ShipInfoViewController:UITableViewDataSource {
 
 extension ShipInfoViewController:UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

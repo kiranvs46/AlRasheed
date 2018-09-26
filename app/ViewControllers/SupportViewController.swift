@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Drift
 
-class SupportViewController: UIViewController {
+class SupportViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addBackButton()
+        //addBackButton()
         hideKeyboardWhenTappedAround()
     }
 
@@ -35,4 +36,10 @@ class SupportViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
+    //MARK - IBActions
+    
+    @IBAction func chatButtonAction() {
+        
+        Drift.showConversations()
+    }
 }
